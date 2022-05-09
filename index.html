@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" href="styles.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <title>Todo App</title>
+    <!-- <style>
+
+    </style> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="container">
+    <!-- create Todo -->
+    <div class="main">
+      <div className="header">
+        <h1>PyScript Todo List</h1>
+      </div>
+      <div className="inputs">
+        <input type="text" id="new-todo" />
+        <!-- This button tiggers the add todo function -->
+        <!-- Normal -->
+        <!-- <button id="add-todo" onclick="addTodo">Add Todo</button> -->
+        <!-- PyScript -->
+        <button id="add-todo" pys-onClick="add_todo">+</button>
+      </div>
+
+      <!-- todo list  -->
+      <div id="todo-list">
+        <p>Your Todos</p>
+      </div>
+
+      <template id="todo-template">
+        <section class="todo">
+          <label class="row">
+            <input type="checkbox" class="col" />
+            <p class="col center"></p>
+          </label>
+        </section>
+      </template>
+    </div>
+    <py-script src="./main.py"></py-script>
+    <!-- <script src="./app.js"></script> -->
+  </body>
+</html>

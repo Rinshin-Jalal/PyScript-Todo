@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&family=Roboto+Flex:opsz@8..144&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.main {
+  /* background: #eee; */
+  border: 2px solid #eee;
+  padding: 20px;
+  border-radius: 20px;
+}
+.header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Macondo", cursive;
+}
+
+input#new-todo {
+  width: 600px;
+  padding: 10px 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #eee;
+}
+button {
+  width: 100px;
+  padding: 10px 10px;
+
+  font-size: 25px;
+  border: none;
+  background: rgb(89, 0, 255);
+  /* border: 3px solid rgb(89, 0, 255); */
+}
+
+.todo {
+  border: 2px solid rgb(189, 200, 255);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.todo .row {
+  display: flex;
+  flex-direction: row;
+}
